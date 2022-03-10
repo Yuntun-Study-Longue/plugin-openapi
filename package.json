@@ -1,0 +1,38 @@
+{
+  "name": "plugin-openapi",
+  "version": "0.0.1",
+  "description": "plugin-openapi",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yuntun-Study-Longue/plugin-openapi.git"
+  },
+  "keywords": [
+    "umi",
+    "yuntun",
+    "openapi"
+  ],
+  "authors": [
+    "chencheng <sorrycc@gmail.com> (https://github.com/sorrycc)",
+    "Alichs <yuntun_wp@alichs.com> (https://github.com/Alichs)"
+  ],
+  "license": "MIT",
+  "bugs": "https://github.com/Yuntun-Study-Longue/issues",
+  "homepage": "https://github.com/Yuntun-Study-Longue/plugin-openapi#readme",
+  "peerDependencies": {
+    "umi": "3.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "luna-openapi": "^0.0.2",
+    "serve-static": "^1.14.1",
+    "swagger-ui-react": "^3.41.1"
+  }
+}
