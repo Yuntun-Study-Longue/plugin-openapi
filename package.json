@@ -1,6 +1,6 @@
 {
   "name": "plugin-openapi",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "plugin-openapi",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -39,7 +39,7 @@
     "access": "public"
   },
   "dependencies": {
-    "luna-openapi": "^0.0.3",
+    "luna-openapi": "^0.0.4",
     "serve-static": "^1.14.1",
     "swagger-ui-react": "^3.41.1"
   },
