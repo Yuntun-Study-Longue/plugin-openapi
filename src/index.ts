@@ -21,7 +21,8 @@ export default (api: IApi) => {
             customFunctionName: joi.function(),
             customClassName: joi.function(),
           }),
-          genType: joi.string()
+          genType: joi.string(),
+          serversPath: joi.string()
         });
         return joi.alternatives(joi.array().items(itemSchema), itemSchema);
       },
@@ -128,7 +129,7 @@ export default App;
   const genAllFiles = async (openAPIConfig: any) => {
     const pageConfig = require(join(api.cwd, 'package.json'));
     const mockFolder = openAPIConfig.mock ? join(api.cwd, 'mock') : undefined;
-    const serversFolder = join(api.cwd, 'src', 'services');
+    const serversFolder = join(api.cwd, openAPIConfig.serversPath || './src/services');
     // 如果mock 文件不存在，创建一下
     if (mockFolder && !existsSync(mockFolder)) {
       mkdirSync(mockFolder);
