@@ -1,6 +1,6 @@
 {
   "name": "plugin-openapi",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "plugin-openapi",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -18,7 +18,8 @@
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
-    "test:update": "umi-test --updateSnapshot"
+    "test:update": "umi-test --updateSnapshot",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "umi",
@@ -39,7 +40,7 @@
     "access": "public"
   },
   "dependencies": {
-    "luna-openapi": "^0.0.4",
+    "luna-openapi": "^0.0.8",
     "serve-static": "^1.14.1",
     "swagger-ui-react": "^3.41.1"
   },
